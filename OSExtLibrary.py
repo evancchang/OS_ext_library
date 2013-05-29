@@ -21,7 +21,7 @@ class OSExtLibrary:
 	def __init__(self):
 		self.original_dir = os.getcwd()
 
-	def change_directory(self, dir):
+	def change_directory(self, path):
 		print "current directory : %s" % os.getcwd()
-		os.chdir(dir)
+		os.chdir(path)
 		print "change directory to  %s" % os.getcwd()		
